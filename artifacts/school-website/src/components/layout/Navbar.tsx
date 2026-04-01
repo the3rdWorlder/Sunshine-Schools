@@ -2,6 +2,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, BookOpen, GraduationCap, Users, MapPin, Image as ImageIcon } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import logoSrc from "@assets/logo-cbc6896f_1775077649878.jpg";
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -19,9 +20,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-xl text-primary" data-testid="link-logo">
-          <div className="bg-primary text-white p-2 rounded-lg">
-            <GraduationCap className="h-5 w-5" />
-          </div>
+          <img src={logoSrc} alt="Sunshine Schools Logo" className="h-10 w-10 rounded-full object-cover" />
           <span>Sunshine Schools</span>
         </Link>
 

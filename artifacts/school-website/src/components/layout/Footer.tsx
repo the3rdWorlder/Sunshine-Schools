@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { GraduationCap, MapPin, Phone, Mail, Facebook, Twitter, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Twitter, Instagram } from "lucide-react";
+import logoSrc from "@assets/logo-cbc6896f_1775077649878.jpg";
 
 export default function Footer() {
   return (
@@ -8,9 +9,7 @@ export default function Footer() {
         
         <div className="col-span-1 md:col-span-1">
           <Link href="/" className="flex items-center gap-2 font-bold text-xl mb-4" data-testid="link-footer-logo">
-            <div className="bg-primary p-2 rounded-lg inline-flex">
-              <GraduationCap className="h-5 w-5 text-white" />
-            </div>
+            <img src={logoSrc} alt="Sunshine Schools Logo" className="h-12 w-12 rounded-full object-cover bg-white" />
             <span>Sunshine Schools</span>
           </Link>
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
