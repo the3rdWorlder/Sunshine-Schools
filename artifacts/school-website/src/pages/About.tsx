@@ -78,43 +78,6 @@ export default function About() {
             <p className="text-muted-foreground text-lg">Dedicated educators with decades of combined experience.</p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Principal */}
-            <Card className="border-border overflow-hidden">
-              <div className="h-64 bg-gray-200">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600&h=600" alt="Principal" className="w-full h-full object-cover" />
-              </div>
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold mb-1">Dr. Sarah Jenkins</h3>
-                <p className="text-primary font-medium mb-4">Principal</p>
-                <p className="text-sm text-muted-foreground">With 20 years in education, Dr. Jenkins leads with a focus on holistic student wellbeing and academic excellence.</p>
-              </CardContent>
-            </Card>
-            
-            {/* Vice Principal */}
-            <Card className="border-border overflow-hidden">
-              <div className="h-64 bg-gray-200">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600&h=600" alt="Vice Principal" className="w-full h-full object-cover" />
-              </div>
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold mb-1">Michael Rodriguez</h3>
-                <p className="text-primary font-medium mb-4">Vice Principal</p>
-                <p className="text-sm text-muted-foreground">Specializing in curriculum development, Mr. Rodriguez ensures our teaching methods are innovative and engaging.</p>
-              </CardContent>
-            </Card>
-
-            {/* Head of Admissions */}
-            <Card className="border-border overflow-hidden sm:col-span-2 lg:col-span-1 sm:max-w-md sm:mx-auto w-full">
-              <div className="h-64 bg-gray-200">
-                <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&q=80&w=600&h=600" alt="Head of Admissions" className="w-full h-full object-cover" />
-              </div>
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold mb-1">Emily Chen</h3>
-                <p className="text-primary font-medium mb-4">Head of Admissions</p>
-                <p className="text-sm text-muted-foreground">Emily is the welcoming first point of contact for new families, helping them navigate their journey at Sunshine Schools.</p>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </section>
 
