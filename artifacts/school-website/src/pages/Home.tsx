@@ -26,6 +26,9 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="max-w-2xl"
           >
+            <Badge className="bg-secondary text-secondary-foreground hover:bg-secondary/90 mb-6 text-sm py-1 px-3" data-testid="badge-admissions-open">
+              Admissions Open for 2025-2026
+            </Badge>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
               Where curious minds <span className="text-primary">grow</span>.
             </h1>
