@@ -13,7 +13,7 @@ export default function About() {
             <Badge className="bg-secondary text-secondary-foreground mb-4">About Us</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Story & Mission</h1>
             <p className="text-xl text-muted-foreground">
-              Discover the history, values, and people that make Greenleaf Academy a special place for children to learn and grow.
+              Discover the history, values, and people that make Sunshine Schools a special place for children to learn and grow.
             </p>
           </div>
         </div>
@@ -30,7 +30,7 @@ export default function About() {
             >
               <h2 className="text-3xl font-bold mb-6">A Legacy of Learning</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Founded in 1998, Greenleaf Academy began as a small community initiative with just 30 students. Today, we are proud to serve over 400 families, but our core ethos remains unchanged: every child is unique and deserves an education tailored to their potential.
+                Founded in 1998, Sunshine Schools began as a small community initiative with just 30 students. Today, we are proud to serve over 400 families, but our core ethos remains unchanged: every child is unique and deserves an education tailored to their potential.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 Our campus has evolved into a modern facility equipped with state-of-the-art science labs, a vibrant arts wing, and expansive athletic fields, all designed to foster comprehensive development.
@@ -111,7 +111,7 @@ export default function About() {
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-bold mb-1">Emily Chen</h3>
                 <p className="text-primary font-medium mb-4">Head of Admissions</p>
-                <p className="text-sm text-muted-foreground">Emily is the welcoming first point of contact for new families, helping them navigate their journey at Greenleaf.</p>
+                <p className="text-sm text-muted-foreground">Emily is the welcoming first point of contact for new families, helping them navigate their journey at Sunshine Schools.</p>
               </CardContent>
             </Card>
           </div>

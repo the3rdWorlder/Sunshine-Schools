@@ -57,9 +57,9 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Welcome to Greenleaf Academy</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Welcome to Sunshine Schools</h2>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                At Greenleaf, we believe every child deserves a school that feels like a second home. Our passionate educators are dedicated to creating a nurturing space where students can explore their interests, build strong friendships, and develop a lifelong love for learning.
+                At Sunshine Schools, we believe every child deserves a school that feels like a second home. Our passionate educators are dedicated to creating a nurturing space where students can explore their interests, build strong friendships, and develop a lifelong love for learning.
               </p>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
                 With our modern facilities and holistic curriculum, we focus on not just academic excellence, but also emotional intelligence and creativity.

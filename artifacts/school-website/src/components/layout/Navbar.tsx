@@ -22,7 +22,7 @@ export default function Navbar() {
           <div className="bg-primary text-white p-2 rounded-lg">
             <GraduationCap className="h-5 w-5" />
           </div>
-          <span>Greenleaf Academy</span>
+          <span>Sunshine Schools</span>
         </Link>
 
         {/* Desktop Nav */}

@@ -32,7 +32,7 @@ export default function Gallery() {
       <section className="bg-primary/5 py-16 md:py-24 border-b">
         <div className="container mx-auto px-4 text-center">
           <Badge className="bg-secondary text-secondary-foreground mb-4">Gallery</Badge>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Life at Greenleaf</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Life at Sunshine Schools</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Take a visual journey through our vibrant classrooms, dynamic events, and beautiful campus.
           </p>
