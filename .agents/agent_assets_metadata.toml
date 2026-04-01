@@ -1,0 +1,74 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "aTtzKxSY-J80Dl_Hn98CO"
+uri = "file://artifacts/school-website/public/images/classroom-1.png"
+type = "image"
+title = "Primary school classroom with students"
+
+[[generated]]
+id = "9aow7Qhw3NNCBpoiFE757"
+uri = "file://artifacts/school-website/public/images/playground-1.png"
+type = "image"
+title = "Students on playground"
+
+[[generated]]
+id = "2NtOElJBxo-TOFh4x3UKF"
+uri = "file://artifacts/school-website/public/images/art-1.png"
+type = "image"
+title = "Kids doing arts and crafts"
+
+[[generated]]
+id = "SYbyAuZTZwnqcNvEjTJRB"
+uri = "file://artifacts/school-website/public/images/campus-1.png"
+type = "image"
+title = "School building exterior"
+
+[[generated]]
+id = "lFvMF5QGOIzNPPumEKJ-L"
+uri = "file://artifacts/school-website/public/images/science-1.png"
+type = "image"
+title = "Children in science lab"
+
+[[generated]]
+id = "JIgutS9yqBAt4JCuFjiyZ"
+uri = "file://artifacts/school-website/public/images/sports-1.png"
+type = "image"
+title = "Kids running in sports field"
+
+[[generated]]
+id = "5T6DlCIF6hbwLfvWx4ghR"
+uri = "file://artifacts/school-website/public/images/library-1.png"
+type = "image"
+title = "Students in library"
+
+[[generated]]
+id = "eT09wG4eMJMkPROxwTUrO"
+uri = "file://artifacts/school-website/public/images/music-1.png"
+type = "image"
+title = "Music class with instruments"
+
+[[generated]]
+id = "NWrklPDbMpgJXWR6MlH1u"
+uri = "file://artifacts/school-website/public/images/graduation-1.png"
+type = "image"
+title = "School graduation ceremony"
+
+[[generated]]
+id = "awkcQOyuIjnJKysnxwpcV"
+uri = "file://artifacts/school-website/public/images/field-trip-1.png"
+type = "image"
+title = "Students on a field trip"
+
+[[generated]]
+id = "NtmbYN_f7j4TlERWQTh0N"
+uri = "file://artifacts/school-website/public/images/sports-day-1.png"
+type = "image"
+title = "School sports day event"
+
+[[generated]]
+id = "z7n3NBSnHoiqr27mkJIbf"
+uri = "file://artifacts/school-website/public/images/group-1.png"
+type = "image"
+title = "Diverse group of students"
