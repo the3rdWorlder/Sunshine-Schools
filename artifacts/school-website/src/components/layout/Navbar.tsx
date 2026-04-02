@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-xl text-primary" data-testid="link-logo">
           <img src={logoSrc} alt="Sunshine Schools Logo" className="h-10 w-10 rounded-full object-cover" />
-          <span>Sunshine Schools</span>
+          <span>Sunshine First School</span>
         </Link>
 
         {/* Desktop Nav */}

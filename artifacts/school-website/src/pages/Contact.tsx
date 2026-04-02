@@ -79,7 +79,7 @@ export default function Contact() {
                       <MapPin className="h-6 w-6" />
                     </div>
                     <h3 className="font-bold mb-2">Our Address</h3>
-                    <p className="text-sm text-muted-foreground">123 Education Lane<br/>Springfield, SP 12345</p>
+                    <p className="text-sm text-muted-foreground">Jigjigayr, Hargeisa<br/>Somalia</p>
                   </CardContent>
                 </Card>
                 
@@ -89,7 +89,7 @@ export default function Contact() {
                       <Phone className="h-6 w-6" />
                     </div>
                     <h3 className="font-bold mb-2">Call Us</h3>
-                    <p className="text-sm text-muted-foreground">Main: (555) 123-4567<br/>Admissions: (555) 123-4568</p>
+                    <p className="text-sm text-muted-foreground">+252 634 225 577</p>
                   </CardContent>
                 </Card>
 
@@ -99,7 +99,7 @@ export default function Contact() {
                       <Mail className="h-6 w-6" />
                     </div>
                     <h3 className="font-bold mb-2">Email Us</h3>
-                    <p className="text-sm text-muted-foreground">hello@greenleafacademy.edu<br/>admissions@greenleaf.edu</p>
+                    <p className="text-sm text-muted-foreground">sunshine@sunshineschools.net</p>
                   </CardContent>
                 </Card>
 

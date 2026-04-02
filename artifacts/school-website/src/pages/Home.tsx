@@ -57,12 +57,12 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Welcome to Sunshine Schools</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Welcome to Sunshine First School</h2>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                At Sunshine Schools, we believe every child deserves a school that feels like a second home. Our passionate educators are dedicated to creating a nurturing space where students can explore their interests, build strong friendships, and develop a lifelong love for learning.
+                Sunshine First School provides a complete learning journey — from Kindergarten through Primary and Secondary levels — under one unified vision of excellence. We nurture students from their earliest years through adolescence with a continuous, well-structured academic pathway.
               </p>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                With our modern facilities and holistic curriculum, we focus on not just academic excellence, but also emotional intelligence and creativity.
+                We don't just educate students — we guide them through a complete journey toward success, building academic strength, moral grounding, and global competitiveness at every stage.
               </p>
               <Button variant="link" className="text-primary p-0 h-auto font-semibold text-lg" asChild data-testid="link-read-more-about">
                 <Link href="/about">Read our full story <ArrowRight className="ml-2 h-4 w-4" /></Link>
@@ -113,19 +113,19 @@ export default function Home() {
               {
                 icon: BookOpen,
                 title: "Academic Excellence",
-                desc: "We provide a rigorous, engaging curriculum that challenges students to think critically and solve complex problems.",
+                desc: "Delivering a structured, high-quality curriculum across all levels — from Kindergarten through Secondary School — with continuous assessment and performance tracking.",
                 color: "bg-blue-100 text-blue-600"
               },
               {
                 icon: Heart,
-                title: "Kindness & Respect",
-                desc: "Empathy is at the core of our community. We teach children to respect diverse perspectives and support one another.",
+                title: "Moral Values",
+                desc: "Instilling integrity, responsibility, and respect. We shape students into compassionate individuals who contribute positively to their communities.",
                 color: "bg-red-100 text-red-600"
               },
               {
                 icon: Sparkles,
-                title: "Creative Exploration",
-                desc: "Innovation thrives here. We encourage students to express themselves through arts, technology, and imaginative play.",
+                title: "Global Readiness",
+                desc: "Preparing students for international universities and scholarships through our integrated SAT program and globally-aligned academic standards.",
                 color: "bg-yellow-100 text-yellow-600"
               }
             ].map((value, index) => (

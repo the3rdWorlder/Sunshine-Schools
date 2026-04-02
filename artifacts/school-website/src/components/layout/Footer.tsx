@@ -10,10 +10,10 @@ export default function Footer() {
         <div className="col-span-1 md:col-span-1">
           <Link href="/" className="flex items-center gap-2 font-bold text-xl mb-4" data-testid="link-footer-logo">
             <img src={logoSrc} alt="Sunshine Schools Logo" className="h-12 w-12 rounded-full object-cover bg-white" />
-            <span>Sunshine Schools</span>
+            <span>Sunshine First School</span>
           </Link>
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
-            Nurturing curious minds and kind hearts. We provide an inspiring environment where every child can flourish and discover their potential.
+            A complete educational journey from Kindergarten to Secondary — building academically strong, morally grounded, and globally competitive students.
           </p>
           <div className="flex gap-4">
             <a href="#" className="text-gray-400 hover:text-secondary transition-colors" data-testid="link-social-facebook"><Facebook className="h-5 w-5" /></a>
@@ -48,15 +48,15 @@ export default function Footer() {
           <ul className="space-y-4">
             <li className="flex items-start gap-3">
               <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-              <span className="text-gray-400 text-sm">123 Education Lane<br/>Springfield, SP 12345</span>
+              <span className="text-gray-400 text-sm">Jigjigayr, Hargeisa<br/>Somalia</span>
             </li>
             <li className="flex items-center gap-3">
               <Phone className="h-5 w-5 text-primary shrink-0" />
-              <span className="text-gray-400 text-sm">(555) 123-4567</span>
+              <span className="text-gray-400 text-sm">+252 634 225 577</span>
             </li>
             <li className="flex items-center gap-3">
               <Mail className="h-5 w-5 text-primary shrink-0" />
-              <span className="text-gray-400 text-sm">hello@greenleafacademy.edu</span>
+              <span className="text-gray-400 text-sm">sunshine@sunshineschools.net</span>
             </li>
           </ul>
         </div>
@@ -66,7 +66,7 @@ export default function Footer() {
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Sunshine Schools. All rights reserved.
+            &copy; {new Date().getFullYear()} Sunshine First School. All rights reserved.
           </p>
           <div className="flex gap-4">
             <a href="#" className="text-gray-500 hover:text-white text-sm" data-testid="link-privacy">Privacy Policy</a>
