@@ -40,7 +40,6 @@ const heroWords = ["Where", "curious", "minds", "grow."];
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen w-full overflow-x-hidden">
-
       {/* ─── HERO ─────────────────────────────────────────────── */}
       <section className="relative w-full min-h-[calc(100vh-4rem)] flex items-end overflow-hidden">
         {/* background image with subtle scale on load */}
@@ -64,9 +63,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.7, ease }}
-          >
-            Jigjigayr · Hargeisa · Somalia
-          </motion.p>
+          >Jigjigayr · Hargeisa · Somaliland</motion.p>
 
           {/* animated heading — word by word */}
           <motion.h1
@@ -138,7 +135,6 @@ export default function Home() {
           </motion.div>
         </motion.div>
       </section>
-
       {/* ─── SPLIT A  (text left · image right) ───────────────── */}
       <section className="grid grid-cols-1 md:grid-cols-2 min-h-[85vh]">
         {/* text */}
@@ -187,7 +183,6 @@ export default function Home() {
           />
         </motion.div>
       </section>
-
       {/* ─── DARK VALUES STRIP ────────────────────────────────── */}
       <section className="py-24 md:py-32" style={{ backgroundColor: "#0C1E31" }}>
         <div className="container mx-auto px-8 md:px-14">
@@ -265,7 +260,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
       {/* ─── SPLIT B  (image left · text right) ───────────────── */}
       <section className="grid grid-cols-1 md:grid-cols-2 min-h-[85vh]">
         {/* image */}
@@ -322,7 +316,6 @@ export default function Home() {
           </Link>
         </motion.div>
       </section>
-
       {/* ─── IMAGE TRIPTYCH ───────────────────────────────────── */}
       <section className="w-full">
         <div className="grid grid-cols-1 md:grid-cols-3">
@@ -360,7 +353,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
       {/* ─── LATEST NEWS / EVENTS ─────────────────────────────── */}
       <section className="py-24 md:py-32 bg-white">
         <div className="container mx-auto px-8 md:px-14">
@@ -442,7 +434,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
       {/* ─── BOTTOM CTA ───────────────────────────────────────── */}
       <motion.section
         className="relative py-28 overflow-hidden"
@@ -475,7 +466,6 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
-
     </div>
   );
 }
