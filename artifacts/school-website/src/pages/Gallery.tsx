@@ -48,7 +48,7 @@ export default function Gallery() {
   const categories = ["All", "Classroom", "Library", "Lab", "Sports", "Events", "Ceremonies"];
 
   const images = [
-    { src: img21, category: "Ceremonies", title: "Graduation Celebration 2023" },
+    { src: img21, category: "Ceremonies", title: "Graduation Celebration 2025" },
     { src: img20, category: "Events", title: "Student Address" },
     { src: img17, category: "Library", title: "Reading in the Library" },
     { src: img18, category: "Library", title: "Group Reading Session" },
