@@ -2,28 +2,49 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 
+import img1 from "@assets/1.jpg_1775098026090.jpeg";
+import img2 from "@assets/2.jpg_1775098026090.jpeg";
+import img3 from "@assets/3.jpg_1775098026089.jpeg";
+import img4 from "@assets/4.jpg_1775098026091.jpeg";
+import img6 from "@assets/6.jpg_1775098026091.jpeg";
+import img7 from "@assets/7.jpg_1775098026092.jpeg";
+import img8 from "@assets/8.jpg_1775098026092.jpeg";
+import img11 from "@assets/11.jpg_1775098026093.jpeg";
+import img12 from "@assets/12.jpg_1775098026095.jpeg";
+import img13 from "@assets/13.jpg_1775098026095.jpeg";
+import img15 from "@assets/15.jpg_1775098026094.jpeg";
+import img16 from "@assets/16.jpg_1775098026094.jpeg";
+import img17 from "@assets/17.jpg_1775098026093.jpeg";
+import img18 from "@assets/18.jpg_1775098026096.jpeg";
+import img20 from "@assets/20.jpg_1775098026096.jpeg";
+import img21 from "@assets/21.jpg_1775098026097.jpeg";
+
 export default function Gallery() {
   const [filter, setFilter] = useState("All");
 
-  const categories = ["All", "Classroom", "Sports", "Events", "Campus"];
+  const categories = ["All", "Classroom", "Library", "Events", "Ceremonies"];
 
   const images = [
-    { src: "/images/classroom-1.png", category: "Classroom", title: "Interactive Learning" },
-    { src: "/images/playground-1.png", category: "Campus", title: "Recess Fun" },
-    { src: "/images/art-1.png", category: "Classroom", title: "Creative Arts" },
-    { src: "/images/campus-1.png", category: "Campus", title: "Main Building" },
-    { src: "/images/science-1.png", category: "Classroom", title: "Science Experiment" },
-    { src: "/images/sports-1.png", category: "Sports", title: "Soccer Practice" },
-    { src: "/images/library-1.png", category: "Campus", title: "Library Reading" },
-    { src: "/images/music-1.png", category: "Classroom", title: "Music Class" },
-    { src: "/images/graduation-1.png", category: "Events", title: "Graduation Day" },
-    { src: "/images/field-trip-1.png", category: "Events", title: "Museum Field Trip" },
-    { src: "/images/sports-day-1.png", category: "Sports", title: "Annual Sports Day" },
-    { src: "/images/group-1.png", category: "Campus", title: "Student Community" },
+    { src: img21, category: "Ceremonies", title: "Graduation Celebration 2023" },
+    { src: img20, category: "Events", title: "Student Address" },
+    { src: img17, category: "Library", title: "Reading in the Library" },
+    { src: img18, category: "Library", title: "Group Reading Session" },
+    { src: img16, category: "Library", title: "Students with Their Books" },
+    { src: img15, category: "Library", title: "Library Reading Hour" },
+    { src: img7,  category: "Classroom", title: "Focused Study" },
+    { src: img4,  category: "Classroom", title: "Classroom Learning" },
+    { src: img8,  category: "Classroom", title: "Exam Preparation" },
+    { src: img6,  category: "Classroom", title: "Student Concentration" },
+    { src: img11, category: "Ceremonies", title: "Award Presentation" },
+    { src: img12, category: "Ceremonies", title: "Certificate Ceremony" },
+    { src: img13, category: "Ceremonies", title: "Achievement Award" },
+    { src: img2,  category: "Events", title: "Ramadan Event" },
+    { src: img1,  category: "Events", title: "School Gathering" },
+    { src: img3,  category: "Events", title: "Leadership Address" },
   ];
 
-  const filteredImages = filter === "All" 
-    ? images 
+  const filteredImages = filter === "All"
+    ? images
     : images.filter(img => img.category === filter);
 
   return (
@@ -32,9 +53,9 @@ export default function Gallery() {
       <section className="bg-primary/5 py-16 md:py-24 border-b">
         <div className="container mx-auto px-4 text-center">
           <Badge className="bg-secondary text-secondary-foreground mb-4">Gallery</Badge>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Life at Sunshine Schools</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Life at Sunshine First School</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Take a visual journey through our vibrant classrooms, dynamic events, and beautiful campus.
+            Take a visual journey through our classrooms, library, events, and ceremonies.
           </p>
         </div>
       </section>
@@ -42,7 +63,7 @@ export default function Gallery() {
       {/* Gallery Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          
+
           {/* Filters */}
           <div className="flex flex-wrap justify-center gap-3 mb-12">
             {categories.map((cat) => (
@@ -50,8 +71,8 @@ export default function Gallery() {
                 key={cat}
                 onClick={() => setFilter(cat)}
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
-                  filter === cat 
-                    ? "bg-primary text-white shadow-md" 
+                  filter === cat
+                    ? "bg-primary text-white shadow-md"
                     : "bg-muted text-muted-foreground hover:bg-muted/80 hover:text-foreground"
                 }`}
                 data-testid={`button-filter-${cat.toLowerCase()}`}
@@ -74,9 +95,9 @@ export default function Gallery() {
                   transition={{ duration: 0.3 }}
                   className="group relative aspect-square rounded-xl overflow-hidden bg-muted"
                 >
-                  <img 
-                    src={image.src} 
-                    alt={image.title} 
+                  <img
+                    src={image.src}
+                    alt={image.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                   />
@@ -90,7 +111,7 @@ export default function Gallery() {
               ))}
             </AnimatePresence>
           </motion.div>
-          
+
           {filteredImages.length === 0 && (
             <div className="text-center py-20">
               <p className="text-muted-foreground">No images found for this category.</p>
