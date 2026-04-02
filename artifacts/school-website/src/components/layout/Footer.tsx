@@ -16,7 +16,7 @@ export default function Footer() {
             A complete educational journey from Kindergarten to Secondary — building academically strong, morally grounded, and globally competitive students.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="text-white/40 hover:text-secondary transition-colors" data-testid="link-social-facebook"><Facebook className="h-4 w-4" /></a>
+            <a href="https://www.facebook.com/p/Sunshine-first-school-61558004259433/" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-secondary transition-colors" data-testid="link-social-facebook"><Facebook className="h-4 w-4" /></a>
             <a href="#" className="text-white/40 hover:text-secondary transition-colors" data-testid="link-social-twitter"><Twitter className="h-4 w-4" /></a>
             <a href="#" className="text-white/40 hover:text-secondary transition-colors" data-testid="link-social-instagram"><Instagram className="h-4 w-4" /></a>
           </div>
