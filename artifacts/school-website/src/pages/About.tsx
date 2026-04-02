@@ -19,7 +19,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* Who We Are */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -70,7 +69,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* Educational Journey */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -120,7 +118,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* Leadership */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -151,7 +148,7 @@ export default function About() {
                   <Globe className="h-6 w-6" />
                 </div>
                 <h3 className="text-xl font-bold mb-1">Issa Omer</h3>
-                <p className="text-primary font-medium mb-3">SAT Program Coordinator</p>
+                <p className="text-primary font-medium mb-3">Director of Admissions</p>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Mail className="h-4 w-4 shrink-0" />
                   <a href="mailto:issa@sunshineschools.net" className="hover:text-primary transition-colors">issa@sunshineschools.net</a>
@@ -161,7 +158,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* Why Choose Us */}
       <section className="py-20">
         <div className="container mx-auto px-4">
