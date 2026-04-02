@@ -4,6 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
 import classroomImg from "@assets/652805278_122248426340266808_7731009226519113777_n.jpg";
+import lowerPrimaryImg from "@assets/584696751_122234146682266808_3440532952551603294_n.jpg";
 import { BookOpen, Rocket, Music, Dumbbell, Beaker, Code, Globe, Palette } from "lucide-react";
 
 export default function Curriculum() {
@@ -72,7 +73,7 @@ export default function Curriculum() {
               <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
                   <div className="order-2 md:order-1 rounded-2xl overflow-hidden shadow-lg h-[400px]">
-                    <img src="/images/art-1.png" alt="Lower Primary" className="w-full h-full object-cover" />
+                    <img src={lowerPrimaryImg} alt="Lower Primary" className="w-full h-full object-cover" />
                   </div>
                   <div className="order-1 md:order-2">
                     <h2 className="text-3xl font-bold mb-6">Building Core Competencies</h2>
