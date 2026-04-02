@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
+import classroomImg from "@assets/652805278_122248426340266808_7731009226519113777_n.jpg";
 import { BookOpen, Rocket, Music, Dumbbell, Beaker, Code, Globe, Palette } from "lucide-react";
 
 export default function Curriculum() {
@@ -61,7 +62,7 @@ export default function Curriculum() {
                     </Accordion>
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-lg h-[400px]">
-                    <img src="/images/classroom-1.png" alt="Early Years" className="w-full h-full object-cover" />
+                    <img src={classroomImg} alt="Early Years" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </motion.div>
