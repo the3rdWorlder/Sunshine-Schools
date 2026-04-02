@@ -216,17 +216,21 @@ export default function Gallery() {
             </button>
 
             {/* Image */}
-            <motion.img
+            <motion.div
               key={lightboxIndex}
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.2 }}
-              src={filteredImages[lightboxIndex].src}
-              alt={filteredImages[lightboxIndex].title}
-              className="max-h-[85vh] max-w-[90vw] rounded-xl object-contain shadow-2xl"
+              className="w-[90vw] h-[78vh] flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
-            />
+            >
+              <img
+                src={filteredImages[lightboxIndex].src}
+                alt={filteredImages[lightboxIndex].title}
+                className="w-full h-full rounded-xl object-contain shadow-2xl"
+              />
+            </motion.div>
 
             {/* Caption */}
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-center">
