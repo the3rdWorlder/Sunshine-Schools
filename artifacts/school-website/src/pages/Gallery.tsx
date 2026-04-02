@@ -30,6 +30,17 @@ import lab8 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.47_(2)_177509870678
 import lab9 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.47_1775098706790.jpeg";
 import sports1 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.48_1775098706790.jpeg";
 import sports2 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.49_1775098706791.jpeg";
+import sports3 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.50_1775098823729.jpeg";
+import sports4 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.51_1775098823730.jpeg";
+import sports5 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.52_1775098823730.jpeg";
+import sports6 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.53_(1)_1775098823730.jpeg";
+import sports7 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.53_(2)_1775098823731.jpeg";
+import sports8 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.53_(3)_1775098823732.jpeg";
+import sports9 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.53_1775098823732.jpeg";
+import sports10 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.54_(1)_1775098823733.jpeg";
+import sports11 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.54_(2)_1775098823734.jpeg";
+import sports12 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.54_1775098823735.jpeg";
+import sports13 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.56_1775098823736.jpeg";
 
 export default function Gallery() {
   const [filter, setFilter] = useState("All");
@@ -62,8 +73,19 @@ export default function Gallery() {
     { src: lab8,  category: "Lab", title: "Student in the Lab" },
     { src: lab9,  category: "Lab", title: "Practical Skills" },
     { src: lab2,  category: "Lab", title: "Lab Partners" },
-    { src: sports1, category: "Sports", title: "Football Training" },
-    { src: sports2, category: "Sports", title: "On the Pitch" },
+    { src: sports1,  category: "Sports", title: "Football Training" },
+    { src: sports2,  category: "Sports", title: "On the Pitch" },
+    { src: sports3,  category: "Sports", title: "Getting Ready" },
+    { src: sports4,  category: "Sports", title: "Match in Action" },
+    { src: sports5,  category: "Sports", title: "Goal Mouth Action" },
+    { src: sports6,  category: "Sports", title: "Team Players" },
+    { src: sports7,  category: "Sports", title: "Football Friends" },
+    { src: sports8,  category: "Sports", title: "Team Line-Up" },
+    { src: sports9,  category: "Sports", title: "Game Day" },
+    { src: sports10, category: "Sports", title: "Football Squad" },
+    { src: sports11, category: "Sports", title: "Rival Teams" },
+    { src: sports12, category: "Sports", title: "White Team Line-Up" },
+    { src: sports13, category: "Sports", title: "Full Squad Photo" },
   ];
 
   const filteredImages = filter === "All"
