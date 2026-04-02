@@ -19,10 +19,22 @@ import img18 from "@assets/18.jpg_1775098026096.jpeg";
 import img20 from "@assets/20.jpg_1775098026096.jpeg";
 import img21 from "@assets/21.jpg_1775098026097.jpeg";
 
+import lab1 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.44_1775098706787.jpeg";
+import lab2 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.44_(1)_1775098706787.jpeg";
+import lab3 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.44_(2)_1775098706787.jpeg";
+import lab4 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.45_1775098706788.jpeg";
+import lab5 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.46_(1)_1775098706788.jpeg";
+import lab6 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.46_1775098706789.jpeg";
+import lab7 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.47_(1)_1775098706789.jpeg";
+import lab8 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.47_(2)_1775098706789.jpeg";
+import lab9 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.47_1775098706790.jpeg";
+import sports1 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.48_1775098706790.jpeg";
+import sports2 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.49_1775098706791.jpeg";
+
 export default function Gallery() {
   const [filter, setFilter] = useState("All");
 
-  const categories = ["All", "Classroom", "Library", "Events", "Ceremonies"];
+  const categories = ["All", "Classroom", "Library", "Lab", "Sports", "Events", "Ceremonies"];
 
   const images = [
     { src: img21, category: "Ceremonies", title: "Graduation Celebration 2023" },
@@ -41,6 +53,17 @@ export default function Gallery() {
     { src: img2,  category: "Events", title: "Ramadan Event" },
     { src: img1,  category: "Events", title: "School Gathering" },
     { src: img3,  category: "Events", title: "Leadership Address" },
+    { src: lab4,  category: "Lab", title: "Electrical Lab Team" },
+    { src: lab6,  category: "Lab", title: "Lab Group Photo" },
+    { src: lab5,  category: "Lab", title: "Lab Session" },
+    { src: lab1,  category: "Lab", title: "Lab Practical Work" },
+    { src: lab7,  category: "Lab", title: "Future Engineer" },
+    { src: lab3,  category: "Lab", title: "Hands-On Learning" },
+    { src: lab8,  category: "Lab", title: "Student in the Lab" },
+    { src: lab9,  category: "Lab", title: "Practical Skills" },
+    { src: lab2,  category: "Lab", title: "Lab Partners" },
+    { src: sports1, category: "Sports", title: "Football Training" },
+    { src: sports2, category: "Sports", title: "On the Pitch" },
   ];
 
   const filteredImages = filter === "All"
