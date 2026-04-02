@@ -32,14 +32,9 @@ export default function Navbar() {
               style={{ boxShadow: "0 0 0 2px rgba(238,175,40,0.4)" }}
             />
           </div>
-          <div className="hidden sm:flex flex-col leading-tight">
-            <span className="font-serif text-white font-semibold tracking-wide text-base leading-none">
-              Sunshine First School
-            </span>
-            <span className="text-white/40 text-[9px] tracking-[0.25em] uppercase mt-0.5">
-              Hargeisa · Somalia
-            </span>
-          </div>
+          <span className="hidden sm:block font-serif text-white font-semibold tracking-wide text-base">
+            Sunshine First School
+          </span>
         </Link>
 
         {/* Desktop Nav — centred */}
