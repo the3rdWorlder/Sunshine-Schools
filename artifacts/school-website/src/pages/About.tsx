@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, Award, BookOpen, Globe, Mail } from "lucide-react";
+import campusImg from "@assets/17.jpg.jpeg";
 
 export default function About() {
   return (
@@ -64,7 +65,7 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl"
             >
-              <img src="/images/campus-1.png" alt="Sunshine First School Campus" className="w-full h-full object-cover" />
+              <img src={campusImg} alt="Sunshine First School Campus" className="w-full h-full object-cover" />
             </motion.div>
           </div>
         </div>
