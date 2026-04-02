@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 import img1 from "@assets/1.jpg_1775098026090.jpeg";
 import img2 from "@assets/2.jpg_1775098026090.jpeg";
@@ -44,6 +45,7 @@ import sports13 from "@assets/WhatsApp_Image_2026-04-01_at_18.21.56_177509882373
 
 export default function Gallery() {
   const [filter, setFilter] = useState("All");
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const categories = ["All", "Classroom", "Library", "Lab", "Sports", "Events", "Ceremonies"];
 
@@ -92,6 +94,26 @@ export default function Gallery() {
     ? images
     : images.filter(img => img.category === filter);
 
+  const openLightbox = (index: number) => setLightboxIndex(index);
+  const closeLightbox = () => setLightboxIndex(null);
+  const goPrev = useCallback(() => {
+    setLightboxIndex(i => (i !== null ? (i - 1 + filteredImages.length) % filteredImages.length : null));
+  }, [filteredImages.length]);
+  const goNext = useCallback(() => {
+    setLightboxIndex(i => (i !== null ? (i + 1) % filteredImages.length : null));
+  }, [filteredImages.length]);
+
+  useEffect(() => {
+    if (lightboxIndex === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowLeft") goPrev();
+      if (e.key === "ArrowRight") goNext();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [lightboxIndex, goPrev, goNext]);
+
   return (
     <div className="flex flex-col min-h-screen w-full bg-white">
       {/* Page Header */}
@@ -138,7 +160,8 @@ export default function Gallery() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
-                  className="group relative aspect-square rounded-xl overflow-hidden bg-muted"
+                  className="group relative aspect-square rounded-xl overflow-hidden bg-muted cursor-pointer"
+                  onClick={() => openLightbox(index)}
                 >
                   <img
                     src={image.src}
@@ -164,6 +187,64 @@ export default function Gallery() {
           )}
         </div>
       </section>
+
+      {/* Lightbox */}
+      <AnimatePresence>
+        {lightboxIndex !== null && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+            onClick={closeLightbox}
+          >
+            {/* Close */}
+            <button
+              onClick={closeLightbox}
+              className="absolute top-4 right-4 text-white bg-white/10 hover:bg-white/25 rounded-full p-2 transition-colors"
+            >
+              <X className="h-6 w-6" />
+            </button>
+
+            {/* Prev */}
+            <button
+              onClick={(e) => { e.stopPropagation(); goPrev(); }}
+              className="absolute left-4 text-white bg-white/10 hover:bg-white/25 rounded-full p-3 transition-colors"
+            >
+              <ChevronLeft className="h-7 w-7" />
+            </button>
+
+            {/* Image */}
+            <motion.img
+              key={lightboxIndex}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.2 }}
+              src={filteredImages[lightboxIndex].src}
+              alt={filteredImages[lightboxIndex].title}
+              className="max-h-[85vh] max-w-[90vw] rounded-xl object-contain shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+
+            {/* Caption */}
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-center">
+              <Badge className="bg-secondary text-secondary-foreground mb-2 border-none">{filteredImages[lightboxIndex].category}</Badge>
+              <p className="text-white font-semibold text-lg">{filteredImages[lightboxIndex].title}</p>
+              <p className="text-white/50 text-sm mt-1">{lightboxIndex + 1} / {filteredImages.length}</p>
+            </div>
+
+            {/* Next */}
+            <button
+              onClick={(e) => { e.stopPropagation(); goNext(); }}
+              className="absolute right-4 text-white bg-white/10 hover:bg-white/25 rounded-full p-3 transition-colors"
+            >
+              <ChevronRight className="h-7 w-7" />
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
