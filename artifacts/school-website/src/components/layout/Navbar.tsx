@@ -23,18 +23,19 @@ export default function Navbar() {
       <div className="container mx-auto px-8 h-[4.5rem] flex items-center justify-between gap-8">
 
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 shrink-0" data-testid="link-logo">
-          <div className="relative">
-            <img
-              src={logoSrc}
-              alt="Sunshine First School"
-              className="h-10 w-10 rounded-full object-cover"
-              style={{ boxShadow: "0 0 0 2px rgba(238,175,40,0.4)" }}
-            />
+        <Link href="/" className="flex items-center gap-4 shrink-0" data-testid="link-logo">
+          <img
+            src={logoSrc}
+            alt="Sunshine First School"
+            className="h-11 w-11 rounded-full object-cover"
+            style={{ boxShadow: "0 0 0 1.5px #EEAF28, 0 0 0 3.5px rgba(238,175,40,0.18)" }}
+          />
+          <div className="hidden sm:flex items-center gap-4">
+            <div className="w-px h-7 bg-white/15" />
+            <span className="font-serif text-white font-light tracking-[0.06em] text-[1.05rem]">
+              Sunshine First School
+            </span>
           </div>
-          <span className="hidden sm:block font-serif text-white font-semibold tracking-wide text-base">
-            Sunshine First School
-          </span>
         </Link>
 
         {/* Desktop Nav — centred */}
