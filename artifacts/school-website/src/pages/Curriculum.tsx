@@ -4,7 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
 import classroomImg from "@assets/652805278_122248426340266808_7731009226519113777_n.jpg";
-import lowerPrimaryImg from "@assets/584696751_122234146682266808_3440532952551603294_n.jpg";
+import lowerPrimaryImg from "@assets/581960689_122234146766266808_2802511307121587309_n.jpg";
 import { BookOpen, Rocket, Music, Dumbbell, Beaker, Code, Globe, Palette } from "lucide-react";
 
 export default function Curriculum() {
