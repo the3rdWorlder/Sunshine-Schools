@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
@@ -74,46 +76,46 @@
   --elevate-2: rgba(0,0,0, .08);
 
   --background: 0 0% 100%;
-  --foreground: 0 0% 8%;
-  --primary: 142 72% 29%;
+  --foreground: 211 61% 12%;
+  --primary: 346 62% 36%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 45 95% 55%;
-  --secondary-foreground: 0 0% 8%;
-  --muted: 0 0% 97%;
-  --muted-foreground: 0 0% 40%;
-  --accent: 142 72% 29%;
+  --secondary: 41 85% 55%;
+  --secondary-foreground: 211 61% 12%;
+  --muted: 210 20% 97%;
+  --muted-foreground: 211 20% 42%;
+  --accent: 211 61% 12%;
   --accent-foreground: 0 0% 100%;
   --card: 0 0% 100%;
-  --card-foreground: 0 0% 8%;
-  --card-border: 0 0% 90%;
-  --border: 0 0% 90%;
-  --input: 0 0% 85%;
-  --ring: 142 72% 29%;
+  --card-foreground: 211 61% 12%;
+  --card-border: 210 20% 90%;
+  --border: 210 20% 90%;
+  --input: 210 20% 85%;
+  --ring: 346 62% 36%;
   --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 8%;
-  --popover-border: 0 0% 90%;
+  --popover-foreground: 211 61% 12%;
+  --popover-border: 210 20% 90%;
   --destructive: 0 72% 51%;
   --destructive-foreground: 0 0% 100%;
   --sidebar: 0 0% 98%;
-  --sidebar-foreground: 0 0% 8%;
-  --sidebar-border: 0 0% 90%;
-  --sidebar-primary: 142 72% 29%;
+  --sidebar-foreground: 211 61% 12%;
+  --sidebar-border: 210 20% 90%;
+  --sidebar-primary: 346 62% 36%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 45 95% 55%;
-  --sidebar-accent-foreground: 0 0% 8%;
-  --sidebar-ring: 142 72% 29%;
+  --sidebar-accent: 41 85% 55%;
+  --sidebar-accent-foreground: 211 61% 12%;
+  --sidebar-ring: 346 62% 36%;
 
-  --chart-1: 142 72% 29%;
-  --chart-2: 45 95% 55%;
-  --chart-3: 0 0% 8%;
-  --chart-4: 142 60% 40%;
-  --chart-5: 45 90% 70%;
+  --chart-1: 346 62% 36%;
+  --chart-2: 41 85% 55%;
+  --chart-3: 211 61% 12%;
+  --chart-4: 346 50% 50%;
+  --chart-5: 41 70% 70%;
 
-  --app-font-sans: 'Inter', sans-serif;
-  --app-font-serif: Georgia, serif;
+  --app-font-sans: 'Inter', system-ui, sans-serif;
+  --app-font-serif: 'Cormorant Garamond', Georgia, serif;
   --app-font-mono: Menlo, monospace;
-  --radius: 0.75rem;
-  
+  --radius: 0.25rem;
+
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -128,40 +130,40 @@
   --elevate-2: rgba(0,0,0, .08);
 
   --background: 0 0% 100%;
-  --foreground: 0 0% 8%;
-  --primary: 142 72% 29%;
+  --foreground: 211 61% 12%;
+  --primary: 346 62% 36%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 45 95% 55%;
-  --secondary-foreground: 0 0% 8%;
-  --muted: 0 0% 97%;
-  --muted-foreground: 0 0% 40%;
-  --accent: 142 72% 29%;
+  --secondary: 41 85% 55%;
+  --secondary-foreground: 211 61% 12%;
+  --muted: 210 20% 97%;
+  --muted-foreground: 211 20% 42%;
+  --accent: 211 61% 12%;
   --accent-foreground: 0 0% 100%;
   --card: 0 0% 100%;
-  --card-foreground: 0 0% 8%;
-  --card-border: 0 0% 90%;
-  --border: 0 0% 90%;
-  --input: 0 0% 85%;
-  --ring: 142 72% 29%;
+  --card-foreground: 211 61% 12%;
+  --card-border: 210 20% 90%;
+  --border: 210 20% 90%;
+  --input: 210 20% 85%;
+  --ring: 346 62% 36%;
   --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 8%;
-  --popover-border: 0 0% 90%;
+  --popover-foreground: 211 61% 12%;
+  --popover-border: 210 20% 90%;
   --destructive: 0 72% 51%;
   --destructive-foreground: 0 0% 100%;
   --sidebar: 0 0% 98%;
-  --sidebar-foreground: 0 0% 8%;
-  --sidebar-border: 0 0% 90%;
-  --sidebar-primary: 142 72% 29%;
+  --sidebar-foreground: 211 61% 12%;
+  --sidebar-border: 210 20% 90%;
+  --sidebar-primary: 346 62% 36%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 45 95% 55%;
-  --sidebar-accent-foreground: 0 0% 8%;
-  --sidebar-ring: 142 72% 29%;
+  --sidebar-accent: 41 85% 55%;
+  --sidebar-accent-foreground: 211 61% 12%;
+  --sidebar-ring: 346 62% 36%;
 
-  --chart-1: 142 72% 29%;
-  --chart-2: 45 95% 55%;
-  --chart-3: 0 0% 8%;
-  --chart-4: 142 60% 40%;
-  --chart-5: 45 90% 70%;
+  --chart-1: 346 62% 36%;
+  --chart-2: 41 85% 55%;
+  --chart-3: 211 61% 12%;
+  --chart-4: 346 50% 50%;
+  --chart-5: 41 70% 70%;
 }
 
 @layer base {
@@ -171,5 +173,10 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--app-font-serif);
+    letter-spacing: -0.01em;
   }
 }

@@ -1,7 +1,6 @@
 import { Link, useLocation } from "wouter";
-import { Menu, X, BookOpen, GraduationCap, Users, MapPin, Image as ImageIcon } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import logoSrc from "@assets/logo-cbc6896f_1775077649878.jpg";
 
 export default function Navbar() {
@@ -9,31 +8,35 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "/", icon: BookOpen },
-    { name: "About Us", href: "/about", icon: Users },
-    { name: "Curriculum", href: "/curriculum", icon: GraduationCap },
-    { name: "Gallery", href: "/gallery", icon: ImageIcon },
-    { name: "Contact", href: "/contact", icon: MapPin },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Curriculum", href: "/curriculum" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 font-bold text-xl text-primary" data-testid="link-logo">
-          <img src={logoSrc} alt="Sunshine Schools Logo" className="h-10 w-10 rounded-full object-cover" />
-          <span>Sunshine First School</span>
+    <header className="sticky top-0 z-50 w-full" style={{ backgroundColor: '#0C1E31' }}>
+      <div className="container mx-auto px-6 h-16 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-3" data-testid="link-logo">
+          <img src={logoSrc} alt="Sunshine Schools Logo" className="h-9 w-9 rounded-full object-cover ring-2 ring-white/20" />
+          <span className="font-serif text-white text-lg font-semibold tracking-wide hidden sm:block">
+            Sunshine First School
+          </span>
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => {
             const isActive = location === item.href;
             return (
-              <Link 
-                key={item.href} 
+              <Link
+                key={item.href}
                 href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  isActive ? "text-primary" : "text-muted-foreground"
+                className={`text-sm tracking-wide transition-colors font-medium ${
+                  isActive
+                    ? "text-secondary"
+                    : "text-white/80 hover:text-white"
                 }`}
                 data-testid={`link-nav-${item.name.toLowerCase().replace(' ', '-')}`}
               >
@@ -41,14 +44,18 @@ export default function Navbar() {
               </Link>
             );
           })}
-          <Button asChild className="ml-4" data-testid="button-enroll-now">
-            <Link href="/contact">Enroll Now</Link>
-          </Button>
+          <Link
+            href="/contact"
+            className="ml-2 text-sm tracking-widest font-semibold text-white border border-white/40 hover:border-white hover:bg-white/10 px-4 py-2 transition-all"
+            data-testid="button-enroll-now"
+          >
+            ENROLL NOW
+          </Link>
         </nav>
 
         {/* Mobile Menu Toggle */}
-        <button 
-          className="md:hidden p-2 text-muted-foreground hover:text-foreground"
+        <button
+          className="md:hidden p-2 text-white/80 hover:text-white"
           onClick={() => setIsOpen(!isOpen)}
           data-testid="button-mobile-menu-toggle"
         >
@@ -58,27 +65,31 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden border-t border-border bg-white py-4 px-4 flex flex-col gap-4 shadow-lg absolute w-full">
+        <div className="md:hidden border-t border-white/10 py-4 px-6 flex flex-col gap-1 absolute w-full shadow-lg" style={{ backgroundColor: '#0C1E31' }}>
           {navItems.map((item) => {
             const isActive = location === item.href;
             return (
-              <Link 
-                key={item.href} 
+              <Link
+                key={item.href}
                 href={item.href}
-                className={`flex items-center gap-3 p-2 rounded-md text-sm font-medium transition-colors hover:bg-muted ${
-                  isActive ? "bg-primary/10 text-primary" : "text-foreground"
+                className={`p-3 text-sm font-medium tracking-wide transition-colors ${
+                  isActive ? "text-secondary" : "text-white/80 hover:text-white"
                 }`}
                 onClick={() => setIsOpen(false)}
                 data-testid={`link-mobile-nav-${item.name.toLowerCase().replace(' ', '-')}`}
               >
-                <item.icon className="h-4 w-4" />
                 {item.name}
               </Link>
             );
           })}
-          <Button asChild className="w-full mt-2" data-testid="button-mobile-enroll-now">
-            <Link href="/contact" onClick={() => setIsOpen(false)}>Enroll Now</Link>
-          </Button>
+          <Link
+            href="/contact"
+            className="mt-3 text-center text-sm tracking-widest font-semibold text-white border border-white/40 hover:border-white px-4 py-3 transition-all"
+            onClick={() => setIsOpen(false)}
+            data-testid="button-mobile-enroll-now"
+          >
+            ENROLL NOW
+          </Link>
         </div>
       )}
     </header>

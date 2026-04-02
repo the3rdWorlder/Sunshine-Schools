@@ -1,0 +1,133 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "GT America",
+      "role": "body"
+    },
+    {
+      "family": "Mondia",
+      "role": "heading"
+    }
+  ],
+  "colors": {
+    "primary": "#95233D",
+    "secondary": "#EEAF28",
+    "accent": "#0C1E31",
+    "background": "#FFFFFF",
+    "textPrimary": "#0C1E31",
+    "link": "#0C1E31"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "GT America",
+      "heading": "Mondia"
+    },
+    "fontStacks": {
+      "heading": [
+        "Mondia",
+        "serif"
+      ],
+      "body": [
+        "GT America",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "GT America",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "71px",
+      "h2": "32px",
+      "body": "16px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "4px"
+  },
+  "components": {
+    "buttonPrimary": {
+      "background": "#0C1E31",
+      "textColor": "#0C1E31",
+      "borderRadius": "4px",
+      "borderRadiusCorners": {
+        "topLeft": "4px",
+        "topRight": "4px",
+        "bottomRight": "4px",
+        "bottomLeft": "4px"
+      },
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "transparent",
+      "textColor": "#0C1E31",
+      "borderColor": "#0C1E31",
+      "borderRadius": "4px",
+      "borderRadiusCorners": {
+        "topLeft": "4px",
+        "topRight": "4px",
+        "bottomRight": "4px",
+        "bottomLeft": "4px"
+      },
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "https://www.caldicott.com/wp-content/themes/caldicott/assets/img/caldicott-logo-white.svg",
+    "favicon": "https://www.caldicott.com/wp-content/themes/caldicott/assets/img/favicon/apple-touch-icon.png",
+    "ogImage": "https://www.caldicott.com/wp-content/uploads/2021/12/2021_06_23-1112-scaled.jpg",
+    "logoHref": "https://www.caldicott.com",
+    "logoAlt": "Caldicott School Logo"
+  },
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Selected #0 because it is visible, medium-sized, and matches the brand name 'Caldicott' with a href to the homepage, making it the primary brand logo.",
+    "confidence": 0.9,
+    "source": "llm"
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 1,
+      "text": "Meet the Head",
+      "reasoning": "Button #1 ('Meet the Head') uses a dark, prominent color (#0C1E31) which aligns with the accent color, making it stand out as a primary call-to-action."
+    },
+    "secondary": {
+      "index": 3,
+      "text": "Follow us on instagram",
+      "reasoning": "Button #3 ('Follow us on instagram') has a transparent background, making it a suitable secondary button as it contrasts with the primary button's dark color."
+    },
+    "confidence": 0.9
+  },
+  "personality": {
+    "tone": "traditional",
+    "energy": "medium",
+    "targetAudience": "Parents of school-aged boys"
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": ""
+  },
+  "confidence": {
+    "buttons": 0.9,
+    "colors": 0.95,
+    "overall": 0.925
+  },
+  "__llm_metadata": {
+    "logoSelection": {
+      "llmCalled": true,
+      "llmSucceeded": true,
+      "finalSource": "llm",
+      "rawLogoSelection": {
+        "selectedLogoIndex": 0,
+        "selectedLogoReasoning": "Selected #0 because it is visible, medium-sized, and matches the brand name 'Caldicott' with a href to the homepage, making it the primary brand logo.",
+        "confidence": 0.9
+      }
+    },
+    "buttonClassification": {
+      "llmCalled": true,
+      "llmSucceeded": true
+    }
+  }
+}
