@@ -195,8 +195,8 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container mx-auto px-6 md:px-10 py-6 flex flex-col md:flex-row items-center justify-between">
           <p className="text-white/30 text-xs tracking-wide mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Sunshine First School. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Sunshine First School. All the
+            rights reserved.
           </p>
           <div className="flex gap-6">
             <a
