@@ -1,4 +1,5 @@
 {
+  "framework": "vite",
   "buildCommand": "pnpm --filter @workspace/school-website build",
   "outputDirectory": "artifacts/school-website/dist/public",
   "installCommand": "pnpm install --no-frozen-lockfile",
