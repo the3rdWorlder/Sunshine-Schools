@@ -1,6 +1,6 @@
 {
-  "buildCommand": "pnpm --filter @workspace/school-website build && cp -r artifacts/school-website/dist/public ./public",
-  "outputDirectory": "public",
+  "buildCommand": "pnpm --filter @workspace/school-website build",
+  "outputDirectory": "artifacts/school-website/dist/public",
   "installCommand": "pnpm install --no-frozen-lockfile",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
