@@ -30,8 +30,8 @@ export default function Curriculum() {
           <Tabs defaultValue="early-years" className="w-full max-w-5xl mx-auto">
             <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 h-auto gap-2 bg-muted p-2 rounded-xl mb-12">
               <TabsTrigger value="early-years" className="py-3 text-base rounded-lg data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">Early Years (Pre-K - K)</TabsTrigger>
-              <TabsTrigger value="lower-primary" className="py-3 text-base rounded-lg data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">Lower Primary (1-3)</TabsTrigger>
-              <TabsTrigger value="upper-primary" className="py-3 text-base rounded-lg data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">Upper Primary (4-6)</TabsTrigger>
+              <TabsTrigger value="lower-primary" className="py-3 text-base rounded-lg data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">Lower Primary (1-4)</TabsTrigger>
+              <TabsTrigger value="upper-primary" className="py-3 text-base rounded-lg data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">Upper Primary (5-8)</TabsTrigger>
             </TabsList>
             
             <TabsContent value="early-years" className="mt-0 outline-none">
