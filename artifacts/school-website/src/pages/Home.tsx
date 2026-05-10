@@ -297,9 +297,10 @@ export default function Home() {
           </p>
           <div className="space-y-4 mb-10">
             {[
-              { level: "Kindergarten (KG)", age: "Ages 4–6" },
-              { level: "Primary School",   age: "Grades 1–6" },
-              { level: "Secondary School", age: "Grades 7–12" },
+              { level: "Kindergarten (KG)",  age: "Ages 4–6" },
+              { level: "Lower Primary",      age: "Grades 1–4" },
+              { level: "Upper Primary",      age: "Grades 5–8" },
+              { level: "Secondary School",   age: "Grades 9–12" },
             ].map((p, i) => (
               <div key={i} className="flex items-center justify-between border-b border-border pb-4">
                 <span className="font-serif text-lg font-light">{p.level}</span>
