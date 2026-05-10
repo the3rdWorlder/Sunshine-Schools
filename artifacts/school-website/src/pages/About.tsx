@@ -52,7 +52,7 @@ export default function About() {
                   </div>
                   <div>
                     <h4 className="font-bold">Our Vision</h4>
-                    <p className="text-muted-foreground">A school where every child, from KG to Secondary, experiences a consistent, high-quality education that prepares them for local excellence and global success.</p>
+                    <p className="text-muted-foreground">To inspire every student to discover their unique potential, fostering a generation of confident, well-rounded individuals ready to shape a brighter future.</p>
                   </div>
                 </div>
               </div>
@@ -90,13 +90,13 @@ export default function About() {
                 level: "Primary School",
                 desc: "Strengthening core academic skills while developing curiosity, discipline, and confidence. Students receive personalised attention and continuous progress tracking.",
                 color: "bg-green-50 border-green-200",
-                badge: "Grades 1–6"
+                badge: "Grades 1–8"
               },
               {
                 level: "Secondary School",
                 desc: "Preparing students for higher education, leadership, and global opportunities through advanced academic programs — including structured SAT preparation.",
                 color: "bg-blue-50 border-blue-200",
-                badge: "Grades 7–12"
+                badge: "Grades 9–12"
               }
             ].map((item, index) => (
               <motion.div

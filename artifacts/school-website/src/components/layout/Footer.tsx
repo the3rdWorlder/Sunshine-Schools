@@ -171,9 +171,11 @@ export default function Footer() {
             <li className="flex items-start gap-3">
               <MapPin className="h-4 w-4 text-secondary shrink-0 mt-0.5" />
               <span className="text-white/50 text-sm tracking-wide">
-                Jigjigayr, Hargeisa
+                Xero-Awr road, Jigjigayar
                 <br />
-                Somaliland
+                Ibrahim-Kooodbuur, Maroodijeex
+                <br />
+                Hargeisa, Somaliland
               </span>
             </li>
             <li className="flex items-center gap-3">

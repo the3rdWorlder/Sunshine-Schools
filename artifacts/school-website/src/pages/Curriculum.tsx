@@ -7,6 +7,7 @@ import classroomImg from "@assets/652805278_122248426340266808_77310092265191137
 import lowerPrimaryImg from "@assets/581960689_122234146766266808_2802511307121587309_n.jpg";
 import upperPrimaryImg from "@assets/586335029_122234615900266808_1449651074966415541_n.jpg";
 import { BookOpen, Rocket, Music, Dumbbell, Beaker, Code, Globe, Palette } from "lucide-react";
+import secondaryImg from "@assets/21.jpg_1775098026097.jpeg";
 
 export default function Curriculum() {
   return (
@@ -28,10 +29,11 @@ export default function Curriculum() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <Tabs defaultValue="early-years" className="w-full max-w-5xl mx-auto">
-            <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 h-auto gap-2 bg-muted p-2 rounded-xl mb-12">
-              <TabsTrigger value="early-years" className="py-3 text-base rounded-lg data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">Early Years (Pre-K - K)</TabsTrigger>
-              <TabsTrigger value="lower-primary" className="py-3 text-base rounded-lg data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">Lower Primary (1-4)</TabsTrigger>
-              <TabsTrigger value="upper-primary" className="py-3 text-base rounded-lg data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">Upper Primary (5-8)</TabsTrigger>
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 h-auto gap-2 bg-muted p-2 rounded-xl mb-12">
+              <TabsTrigger value="early-years" className="py-3 text-sm md:text-base rounded-lg data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">Early Years (Pre-K - K)</TabsTrigger>
+              <TabsTrigger value="lower-primary" className="py-3 text-sm md:text-base rounded-lg data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">Lower Primary (1-4)</TabsTrigger>
+              <TabsTrigger value="upper-primary" className="py-3 text-sm md:text-base rounded-lg data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">Upper Primary (5-8)</TabsTrigger>
+              <TabsTrigger value="secondary" className="py-3 text-sm md:text-base rounded-lg data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">Secondary (9-12)</TabsTrigger>
             </TabsList>
             
             <TabsContent value="early-years" className="mt-0 outline-none">
@@ -79,7 +81,7 @@ export default function Curriculum() {
                   <div className="order-1 md:order-2">
                     <h2 className="text-3xl font-bold mb-6">Building Core Competencies</h2>
                     <p className="text-muted-foreground text-lg mb-6">
-                      Grades 1-3 focus on solidifying reading, writing, and mathematical skills while introducing broader concepts in science and social studies through thematic units.
+                      Grades 1-4 focus on solidifying reading, writing, and mathematical skills while introducing broader concepts in science and social studies through thematic units.
                     </p>
                     <Accordion type="single" collapsible className="w-full" defaultValue="item-1">
                       <AccordionItem value="item-1" className="border-border">
@@ -112,7 +114,7 @@ export default function Curriculum() {
                   <div>
                     <h2 className="text-3xl font-bold mb-6">Fostering Independence</h2>
                     <p className="text-muted-foreground text-lg mb-6">
-                      Grades 4-6 prepare students for middle school by developing critical thinking, independent study skills, and complex problem-solving abilities across all subjects.
+                      Grades 5-8 prepare students for secondary school by developing critical thinking, independent study skills, and complex problem-solving abilities across all subjects.
                     </p>
                     <Accordion type="single" collapsible className="w-full" defaultValue="item-1">
                       <AccordionItem value="item-1" className="border-border">
@@ -137,6 +139,42 @@ export default function Curriculum() {
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-lg h-[400px]">
                     <img src={upperPrimaryImg} alt="Upper Primary" className="w-full h-full object-cover" />
+                  </div>
+                </div>
+              </motion.div>
+            </TabsContent>
+
+            <TabsContent value="secondary" className="mt-0 outline-none">
+              <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+                  <div className="order-2 md:order-1 rounded-2xl overflow-hidden shadow-lg h-[400px]">
+                    <img src={secondaryImg} alt="Secondary School" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="order-1 md:order-2">
+                    <h2 className="text-3xl font-bold mb-6">University Readiness & Leadership</h2>
+                    <p className="text-muted-foreground text-lg mb-6">
+                      Grades 9-12 equip students with the academic rigour, critical thinking, and global perspective required for higher education and professional success — including integrated SAT preparation.
+                    </p>
+                    <Accordion type="single" collapsible className="w-full" defaultValue="item-1">
+                      <AccordionItem value="item-1" className="border-border">
+                        <AccordionTrigger className="text-lg font-semibold hover:text-primary">Advanced Academics</AccordionTrigger>
+                        <AccordionContent className="text-muted-foreground leading-relaxed">
+                          In-depth study of mathematics, sciences, literature, and humanities with an emphasis on analytical writing, research methodology, and independent scholarship.
+                        </AccordionContent>
+                      </AccordionItem>
+                      <AccordionItem value="item-2" className="border-border">
+                        <AccordionTrigger className="text-lg font-semibold hover:text-primary">SAT & University Preparation</AccordionTrigger>
+                        <AccordionContent className="text-muted-foreground leading-relaxed">
+                          Structured SAT coaching embedded in the curriculum, alongside university application guidance, interview preparation, and scholarship awareness programs.
+                        </AccordionContent>
+                      </AccordionItem>
+                      <AccordionItem value="item-3" className="border-border">
+                        <AccordionTrigger className="text-lg font-semibold hover:text-primary">Leadership & Character</AccordionTrigger>
+                        <AccordionContent className="text-muted-foreground leading-relaxed">
+                          Student council, community service projects, mentorship programs, and values-based education that shape responsible, principled graduates ready to lead.
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
                   </div>
                 </div>
               </motion.div>
@@ -190,7 +228,7 @@ export default function Curriculum() {
                   <Globe className="h-6 w-6" />
                 </div>
                 <h3 className="font-bold text-lg mb-2">World Languages</h3>
-                <p className="text-sm text-muted-foreground">Introduction to Spanish and French, focusing on conversation and culture.</p>
+                <p className="text-sm text-muted-foreground">Introduction to English and Arabic, focusing on conversation and culture.</p>
               </CardContent>
             </Card>
           </div>

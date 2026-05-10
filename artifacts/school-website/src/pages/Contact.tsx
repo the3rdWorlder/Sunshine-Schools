@@ -79,7 +79,7 @@ export default function Contact() {
                       <MapPin className="h-6 w-6" />
                     </div>
                     <h3 className="font-bold mb-2">Our Address</h3>
-                    <p className="text-sm text-muted-foreground">Jigjigayr, Hargeisa<br/>Somalia</p>
+                    <p className="text-sm text-muted-foreground">Xero-Awr road, Jigjigayar<br/>Ibrahim-Kooodbuur, Maroodijeex<br/>Hargeisa, Somaliland</p>
                   </CardContent>
                 </Card>
                 
@@ -114,13 +114,18 @@ export default function Contact() {
                 </Card>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="w-full h-[300px] bg-muted rounded-xl border border-border flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://maps.googleapis.com/maps/api/staticmap?center=Springfield&zoom=14&size=800x400&sensor=false')] bg-cover bg-center opacity-40 grayscale"></div>
-                <div className="relative z-10 flex flex-col items-center">
-                  <MapPin className="h-10 w-10 text-primary mb-2" />
-                  <span className="font-bold text-foreground bg-white/80 px-4 py-2 rounded-lg shadow-sm backdrop-blur-sm">View on Google Maps</span>
-                </div>
+              {/* Google Maps embed */}
+              <div className="w-full h-[300px] rounded-xl border border-border overflow-hidden shadow-sm">
+                <iframe
+                  src="https://maps.google.com/maps?q=9.5761906,44.0380838&z=17&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Sunshine First School Location"
+                />
               </div>
             </div>
 
