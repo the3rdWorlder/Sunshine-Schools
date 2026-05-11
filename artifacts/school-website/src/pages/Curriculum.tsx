@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import classroomImg from "@assets/652805278_122248426340266808_7731009226519113777_n.jpg";
 import lowerPrimaryImg from "@assets/581960689_122234146766266808_2802511307121587309_n.jpg";
 import upperPrimaryImg from "@assets/586335029_122234615900266808_1449651074966415541_n.jpg";
-import { BookOpen, Rocket, Music, Dumbbell, Beaker, Code, Globe, Palette } from "lucide-react";
+import { BookOpen, Rocket, Dumbbell, Beaker, Code, Globe, Palette } from "lucide-react";
 import secondaryImg from "@assets/21.jpg_1775098026097.jpeg";
 
 export default function Curriculum() {
@@ -202,16 +202,6 @@ export default function Curriculum() {
               </CardContent>
             </Card>
             
-            <Card className="border-border shadow-sm hover:shadow-md transition-all">
-              <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Music className="h-6 w-6" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">Music</h3>
-                <p className="text-sm text-muted-foreground">Vocal training, rhythm, notation, and introduction to various instruments.</p>
-              </CardContent>
-            </Card>
-
             <Card className="border-border shadow-sm hover:shadow-md transition-all">
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
