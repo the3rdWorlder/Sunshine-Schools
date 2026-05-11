@@ -6,10 +6,11 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import img1 from "@assets/1.jpg_1775098026090.jpeg";
 import img2 from "@assets/2.jpg_1775098026090.jpeg";
 import img3 from "@assets/3.jpg_1775098026089.jpeg";
-import img4 from "@assets/4.jpg_1775098026091.jpeg";
-import img6 from "@assets/6.jpg_1775098026091.jpeg";
-import img7 from "@assets/7.jpg_1775098026092.jpeg";
-import img8 from "@assets/8.jpg_1775098026092.jpeg";
+import classroom1 from "@assets/classroom-new-1.jpeg";
+import classroom2 from "@assets/classroom-new-2.jpeg";
+import classroom3 from "@assets/classroom-new-3.jpeg";
+import classroom4 from "@assets/classroom-new-4.jpeg";
+import classroom5 from "@assets/classroom-new-5.jpeg";
 import img11 from "@assets/11.jpg_1775098026093.jpeg";
 import img12 from "@assets/12.jpg_1775098026095.jpeg";
 import img13 from "@assets/13.jpg_1775098026095.jpeg";
@@ -56,10 +57,11 @@ export default function Gallery() {
     { src: img18, category: "Library", title: "Group Reading Session" },
     { src: img16, category: "Library", title: "Students with Their Books" },
     { src: img15, category: "Library", title: "Library Reading Hour" },
-    { src: img7,  category: "Classroom", title: "Focused Study" },
-    { src: img4,  category: "Classroom", title: "Classroom Learning" },
-    { src: img8,  category: "Classroom", title: "Exam Preparation" },
-    { src: img6,  category: "Classroom", title: "Student Concentration" },
+    { src: classroom1, category: "Classroom", title: "Focused Study" },
+    { src: classroom2, category: "Classroom", title: "Exam Day" },
+    { src: classroom3, category: "Classroom", title: "Young Learners" },
+    { src: classroom4, category: "Classroom", title: "Exam in Progress" },
+    { src: classroom5, category: "Classroom", title: "Classroom Overview" },
     { src: img11, category: "Ceremonies", title: "Award Presentation" },
     { src: img12, category: "Ceremonies", title: "Certificate Ceremony" },
     { src: img13, category: "Ceremonies", title: "Achievement Award" },
